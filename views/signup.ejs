@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/bootstrap.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+<div class='header'>
+    <header class="head">
+      <img class="logo" src="/images/logo.png" alt='arnowa-logo'/>
+      ARNOWA<br><h class="head2">&nbsp; Smart <t1 class='head3'>&nbsp;Efficient&nbsp;</t1> Effective</h>
+    </header>
+</div>
+<div class="container">
+  <div class="fm">
+    <form action="/signup" method="post" class="form">
+    <div class="lg">Sign up</div>
+
+    <div class='input'><label>Name</label><br>
+        <input class="input-group" type="text" placeholder="Elnon musk" name='name' value="<%=data.name%>" required/>
+    </div>
+
+    <div class='input'>
+        <label>Email Address</label><br><input class="input-group" type="text" name='email' value="<%=data.email%>" placeholder="mike@gmail.com" required/>
+    </div>
+
+    <div class='input'>
+        <label>Password</label><br><input class="input-group" type="password" name='password' value="<%=data.password%>" placeholder="Create your password" required/>
+    </div>
+
+    <div class='input'>
+        <input class="input-group" type="password" placeholder="Re-Enter Same Password" name='passwords' required/>
+    </div>
+
+    <div class='input'><input class="btns" type="submit" value="Create Account" /></div>
+    </form>
+    
+    <div class="signup">
+      Already have an account ? <a href="/">Log in</a>
+
+    </div><%if(alerts==='***Password Are Not Same'||'***Password Must Be Of 6 Character'){%>
+      <div class="alert-danger pops">
+      &nbsp; <%=alerts%>
+      <%}%>
+      </div>
+    <%if(alerts==='***This Email Already In Use'){%>
+      <div class="alert-secondary pops">
+        &nbsp; <%=alerts%>
+      <%}%>
+    </div>
+    </div>
+    
+  </div>
+  </body>
+</html>

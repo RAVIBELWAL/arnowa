@@ -1,0 +1,175 @@
+body {
+  padding: 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.header {
+  padding-top: 6vh;
+  padding-left: 43%;
+  padding-bottom: 6vh;
+  display: block;
+  background-color: rgb(207, 224, 251);
+}
+
+.head {
+  color: white;
+  font-size: 1.8em;
+  font-style: italic;
+  letter-spacing: 3px;
+}
+.head2 {
+  padding-left: 35px;
+  color: green;
+  font-size: 14px;
+  font-style: normal;
+  letter-spacing: normal;
+}
+.head3 {
+  color: red;
+  font-style: normal;
+  letter-spacing: normal;
+}
+
+.fm {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.lg {
+  padding-top: 7vh;
+  padding-bottom: 5vh;
+  text-align: center;
+  color: indigo;
+  font-weight: 700;
+  font-size: 1.7em;
+}
+.input {
+  padding-bottom: 2.5vh;
+  padding-top: 1vh;
+  font-weight: 600;
+}
+
+.logo {
+  width: 26px;
+}
+label {
+  padding-bottom: 8px;
+}
+
+.btns {
+  color: white;
+  background-color: rgb(74, 117, 239);
+  height: 32px;
+  width: 100%;
+  border:none;
+  border-radius: 15px;
+}
+
+.signup {
+  text-align: center;
+  font-weight: 600;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+a {
+  color: rgb(74, 117, 239);
+  text-decoration: none;
+}
+
+.input-group {
+  height: 2em;
+  border: none;
+  border-bottom: 0.5px solid grey;
+  outline: none;
+}
+
+.reset{text-align: right;}
+
+.pops{ 
+  height: 18px; 
+}
+
+.greet{
+  text-align: center;
+  border-bottom: solid white 2px ;
+  padding-bottom: 5px;
+}
+.dashboard{
+  background-color: #f0f0f0;
+  padding-top: 5px;
+}
+
+user{font-weight: bold;text-transform: uppercase;}
+
+.main{
+  text-align: center;
+  padding-top: 80px;
+}
+.graph{padding-top: 15px;padding-bottom: 15px;}
+
+.percent{
+  padding-top: 15px;
+  color: green;
+  font-weight: bold;
+  font-size: 70px;
+}
+.percent div:nth-child(2){
+  color: red;
+}
+
+.data{
+display: inline;
+}
+per{
+  font-size: 50px;
+}
+
+.draw{
+  border-top: solid rgb(255, 182, 25);
+  width: 115%;
+  background-color: rgb(255, 226, 97);
+  height: 10px;
+  
+}
+
+.panel{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.bars{
+display: flex;
+align-items: flex-end;
+}
+
+.d2{background-color: #bbbbff; border-top: solid #91a5ff;}
+.d3{background-color: #ffc289; border-top:  solid #ff7878;}
+.tx1{color:rgb(255, 182, 25);}
+.tx2{color:#91a5ff;}
+.tx3{color:#ff7878;}
+.piechart{
+  max-width: 20vw;
+  max-height: 20vw;
+  min-width: 185px;
+  min-height: 185px;
+  border-radius: 50%;
+
+}
+
+.pie{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testsss{
+  position: relative;
+ a
+}

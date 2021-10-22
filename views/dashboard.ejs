@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/bootstrap.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Dashboard</title>
+</head>
+
+<body class="dashboard">
+        
+    <div class='greet'>
+        Welcome <user> <%=username%> <a href="/logout">Logout..</a></user>
+    </div>
+    <div class='main'>
+        <div class="row graph">
+            <div class="col-8 panel">
+                <div class="row bars col-6">
+                <div class="data  col-4">
+                    <d class="tx1"><%=data[0]%></d>
+                        <br>
+                        <div class="draw " style="height:<%=(data[0]/10)*1.5%>px;"></div>
+                        <br>India
+                </div>
+                <div class="data col-4">
+                  <d class="tx2">  <%=data[1]%></d>
+                        <br>
+                        <div class="draw d2" style="height:<%=(data[1]/10)*1.5%>px;"></div>
+                        <br>Oman
+                </div>
+                <div class="data col-4">
+                    <d class="tx3"><%=data[2]%></d>
+                        <br>
+                        <div class="draw d3" style="height:<%=(data[2]/10)*1.5%>px;"></div>
+                        <br>US
+                </div>
+                </div>
+                <br><br>Growth
+            </div>
+
+            <div class="col-4 pie">
+                <div class='piechart' style="background-image: conic-gradient(
+                    #ffc31b  <%=(((data[0]/(data[0]+data[1]+data[2]))*100)*3.6).toFixed(2)%>deg, 
+                    #9494ff 0  <%=((((data[0]/(data[0]+data[1]+data[2]))*100)*3.6)+(((data[1]/(data[0]+data[1]+data[2]))*100)*3.6)).toFixed(2)%>deg, 
+                    #ff7600 0deg) ">
+                </div> 
+                <br><br>Loss
+            </div>
+        </div>
+        <div class="row percent">
+            <div class="col-8"><%=(((data[0]+data[1]+data[2])/3000)*100).toFixed(1)%><per>%</per>
+            </div>
+            <div class="col-4"><%=(93-((data[0]+data[1]+data[2])/3000)*100).toFixed(1)%><per>%</per>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

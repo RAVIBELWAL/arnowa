@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/bootstrap.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+<div class='header'>
+    <header class="head">
+      <img class="logo" src="/images/logo.png" alt='arnowa-logo'/>
+      ARNOWA<br><h class="head2">&nbsp; Smart <t1 class='head3'>&nbsp;Efficient&nbsp;</t1> Effective</h>
+    </header>
+</div>
+<div class="container">
+  <div class="fm">
+    <form action="/" method="post" class="form">
+    <div class="lg">Log in</div>
+    <div class='input'><label>Email Address</label><br><input class="input-group" type="email" name='email' value='' placeholder="mike@gmail.com" required/></div>
+    <div class="reset"><a href="#" onclick='alert("Currenty Working On It")'>Forget Password?</a></div>
+    <div class='input'><label>Password</label><br><input class="input-group" type="password" name='password' value='' placeholder="Enter your password" required /></div>
+    <div class='input'><input class="btns" type="submit" value="Log In" /></div>
+    </form>
+    <div class="signup">
+      Don't have an account ? <a href="/signup">Sign up</a>
+    </div><%if(alerts!==''){%>
+      <%if(alerts==='Logout Successfully'){%>
+      <div class="alert-success pops"><%} else{%>
+      
+        <div class="alert-danger pops">
+       <%}%> 
+      &nbsp; <%=alerts%>
+      <%}%>
+      </div>
+    </div>
+
+  </div>
+  
+</div>
+  </body>
+</html>
